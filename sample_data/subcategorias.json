@@ -1,0 +1,152 @@
+[
+  {
+    "nome": "Massas",
+    "categoria_id": 1,
+    "status": true
+  },
+  {
+    "nome": "Carnes",
+    "categoria_id": 1,
+    "status": true
+  },
+  {
+    "nome": "Laticínios",
+    "categoria_id": 1,
+    "status": true
+  },
+  {
+    "nome": "Refrigerantes",
+    "categoria_id": 2,
+    "status": true
+  },
+  {
+    "nome": "Sucos",
+    "categoria_id": 2,
+    "status": true
+  },
+  {
+    "nome": "Águas",
+    "categoria_id": 2,
+    "status": true
+  },
+  {
+    "nome": "Televisores",
+    "categoria_id": 3,
+    "status": true
+  },
+  {
+    "nome": "Celulares",
+    "categoria_id": 3,
+    "status": true
+  },
+  {
+    "nome": "Fones de Ouvido",
+    "categoria_id": 3,
+    "status": true
+  },
+  {
+    "nome": "Computadores",
+    "categoria_id": 4,
+    "status": true
+  },
+  {
+    "nome": "Monitores",
+    "categoria_id": 4,
+    "status": true
+  },
+  {
+    "nome": "Periféricos",
+    "categoria_id": 4,
+    "status": true
+  },
+  {
+    "nome": "Camisetas",
+    "categoria_id": 5,
+    "status": true
+  },
+  {
+    "nome": "Calças",
+    "categoria_id": 5,
+    "status": true
+  },
+  {
+    "nome": "Calçados",
+    "categoria_id": 5,
+    "status": true
+  },
+  {
+    "nome": "Cuidados com a Pele",
+    "categoria_id": 6,
+    "status": true
+  },
+  {
+    "nome": "Cuidados com os Cabelos",
+    "categoria_id": 6,
+    "status": true
+  },
+  {
+    "nome": "Maquiagem",
+    "categoria_id": 6,
+    "status": true
+  },
+  {
+    "nome": "Detergentes",
+    "categoria_id": 7,
+    "status": true
+  },
+  {
+    "nome": "Desinfetantes",
+    "categoria_id": 7,
+    "status": true
+  },
+  {
+    "nome": "Amaciantes",
+    "categoria_id": 7,
+    "status": true
+  },
+  {
+    "nome": "Papelaria",
+    "categoria_id": 8,
+    "status": true
+  },
+  {
+    "nome": "Organização",
+    "categoria_id": 8,
+    "status": true
+  },
+  {
+    "nome": "Materiais de Impressão",
+    "categoria_id": 8,
+    "status": true
+  },
+  {
+    "nome": "Ferramentas Manuais",
+    "categoria_id": 9,
+    "status": true
+  },
+  {
+    "nome": "Ferramentas Elétricas",
+    "categoria_id": 9,
+    "status": true
+  },
+  {
+    "nome": "Acessórios para Ferramentas",
+    "categoria_id": 9,
+    "status": true
+  },
+  {
+    "nome": "Materiais de Alvenaria",
+    "categoria_id": 10,
+    "status": true
+  },
+  {
+    "nome": "Materiais Hidráulicos",
+    "categoria_id": 10,
+    "status": true
+  },
+  {
+    "nome": "Materiais Elétricos",
+    "categoria_id": 10,
+    "status": true
+  }
+]

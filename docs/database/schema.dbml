@@ -1,0 +1,94 @@
+Table categorias [note: 'Tabela de categorias']{
+  id integer [primary key, note: 'ID da categoria']
+  nome varchar(50) [unique, not null, note: 'Nome da categoria']
+  status bool [not null, default: true, note: 'Status da categoria']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table enderecos [note: 'Tabela de endereços de armazenagem']{
+  id integer [primary key, note: 'ID do endereco de armazenagem']
+  cea char(10) [unique, not null, note: 'Código do endereço de armazenagem']
+  status bool [not null, default: true, note: 'Status do endereço de armazenagem']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table fornecedores [note: 'Tabela de fornecedores']{
+  id integer [primary key, note: 'ID do fornecedor']
+  nome varchar(50) [unique, not null, note: 'Nome do fornecedor']
+  cnpj char(14) [unique, not null, note: 'CNPJ do fornecedor']
+  email varchar(50) [note: 'Endereço de email do fornecedor']
+  telefone varchar(11) [note: 'Número de telefone do fornecedor']
+  status bool [not null, default: true, note: 'Status do fornecedor']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table produtos [note: 'Tabela de produtos']{
+  id integer [primary key, note: 'ID do produto']
+  nome varchar(50) [unique, not null, note: 'Nome do produto']
+  descricao varchar(75) [not null, note: 'Descrição do produto']
+  sku varchar(25) [unique, not null, note: 'Código SKU do produto']
+  barcode char(13) [unique, not null, note: 'Código de barras EAN-13 do produto']
+  ncm char(8) [not null, note: 'Código NCM do produto']
+  endereco_id integer [unique, not null, note: 'ID do endereço de armazenagem do produto']
+  fornecedor_id integer [not null, note: 'ID do fornecedor do produto']
+  subcategoria_id integer [not null, note: 'ID da subcategoria do produto']
+  estoque_atual decimal [not null, default: 0.0, note: 'Estoque atual do produto']
+  estoque_min decimal [not null, default: 0.0, note: 'Estoque mínimo do produto']
+  estoque_max decimal [not null, default: 0.0, note: 'Estoque máximo do produto']
+  unidade_id integer [not null, note: 'ID da unidade de medida do produto']
+  preco_venda decimal [not null, default: 0.0, note: 'Preço de venda do produto']
+  preco_custo decimal [not null, default: 0.0, note: 'Preço de custo do produto']
+  status bool [not null, default: true, note: 'Status do produto']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table subcategorias [note: 'Tabela de subcategorias']{
+  id integer [primary key, note: 'ID da subcategoria']
+  nome varchar(50) [not null, note: 'Nome da subcategoria']
+  categoria_id integer [not null, note: 'ID da categoria referente à subcategoria']
+  status bool [not null, default: true, note: 'Status da subcategoria']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table unidades [note: 'Tabela de unidades de medida']{
+  id integer [primary key, note: 'ID da unidade de medida']
+  nome varchar(50) [unique, not null, note: 'Nome da unidade de medida']
+  sigla varchar(10) [unique, not null, note: 'Sigla da unidade de medida']
+  status bool [not null, default: true, note: 'Status da unidade de medida']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table itens [note: 'Tabela de itens']{
+  id integer [primary key, note: 'ID do item']
+  movimento_id integer [not null, note: 'ID da movimentação do item']
+  produto_id integer [not null, note: 'ID do produto referente ao item']
+  qtd_unidades decimal [not null, note: 'Quantidade de unidades do item']
+  preco_unit decimal [not null, default: 0.0, note: 'Preço unitário do item']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Table movimentos [note: 'Tabela de movimentos']{
+  id integer [primary key, note: 'ID do movimento']
+  nf_numero varchar(9) [not null, note: 'Número da nota fiscal do movimento']
+  nf_chave varchar(44) [unique, not null, note: 'Chave de acesso da nota fiscal do movimento']
+  tipo varchar(7) [not null, note: 'Tipo de movimento']
+  fornecedor_id integer [not null, note: 'ID do fornecedor de origem ou destino do movimento']
+  criado_em timestamp [note: 'Data e hora de criação do registro']
+  atualizado_em timestamp [note: 'Data e hora de atualização do registro']
+}
+
+Ref: produtos.endereco_id - enderecos.id
+Ref: produtos.fornecedor_id > fornecedores.id
+Ref: produtos.subcategoria_id > subcategorias.id
+Ref: produtos.unidade_id > unidades.id
+Ref: movimentos.fornecedor_id > fornecedores.id
+Ref: itens.movimento_id > movimentos.id
+Ref: itens.produto_id > produtos.id
+Ref: subcategorias.categoria_id > categorias.id

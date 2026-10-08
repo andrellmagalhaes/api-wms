@@ -1,0 +1,72 @@
+[
+  {
+    "nome": "Distribuidora Nordeste",
+    "cnpj": "12345678000195",
+    "email": "contato@distribuidoranordeste.com.br",
+    "telefone": "71987654321",
+    "status": true
+  },
+  {
+    "nome": "Comercial Bahia",
+    "cnpj": "98765432000110",
+    "email": "vendas@comercialbahia.com.br",
+    "telefone": "7132345678",
+    "status": true
+  },
+  {
+    "nome": "Fornecedor Central",
+    "cnpj": "45678912000134",
+    "email": "contato@fornecedorcentral.com",
+    "telefone": "11987654321",
+    "status": true
+  },
+  {
+    "nome": "Atacado Brasil",
+    "cnpj": "24681357000186",
+    "email": "vendas@atacadobrasil.com.br",
+    "telefone": "1134567890",
+    "status": true
+  },
+  {
+    "nome": "Suprimentos Gerais",
+    "cnpj": "13579246000157",
+    "email": "compras@suprimentosgerais.com",
+    "telefone": "21998765432",
+    "status": true
+  },
+  {
+    "nome": "Mercantil Paulista",
+    "cnpj": "36925814000178",
+    "email": "contato@mercantilpaulista.com.br",
+    "telefone": "1132234455",
+    "status": true
+  },
+  {
+    "nome": "Comercial Atlântico",
+    "cnpj": "58246913000129",
+    "email": "vendas@comercialatlantico.com.br",
+    "telefone": "71976543210",
+    "status": true
+  },
+  {
+    "nome": "Grupo Fornece Mais",
+    "cnpj": "74185296000163",
+    "email": "atendimento@fornecemais.com.br",
+    "telefone": null,
+    "status": true
+  },
+  {
+    "nome": "Distribuidora União",
+    "cnpj": "86420975000141",
+    "email": null,
+    "telefone": "3133345566",
+    "status": true
+  },
+  {
+    "nome": "Importadora Nacional",
+    "cnpj": "97531864000152",
+    "email": "contato@importadoranacional.com.br",
+    "telefone": "11981234567",
+    "status": true
+  }
+]

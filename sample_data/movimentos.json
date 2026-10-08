@@ -1,0 +1,117 @@
+[
+  {
+    "nf_numero": "100001",
+    "nf_chave": "35261012345678000195550010000010011000000001",
+    "tipo": "Entrada",
+    "fornecedor_cnpj": "12345678000195",
+    "itens": [
+      {
+        "barcode": "7891000000001",
+        "qtd_unidades": 100,
+        "preco_unit": 4.2
+      },
+      {
+        "barcode": "7891000000003",
+        "qtd_unidades": 80,
+        "preco_unit": 4.1
+      },
+      {
+        "barcode": "7891000000005",
+        "qtd_unidades": 60,
+        "preco_unit": 5.8
+      }
+    ]
+  },
+  {
+    "nf_numero": "100002",
+    "nf_chave": "35261098765432000110550010000010022000000002",
+    "tipo": "Entrada",
+    "fornecedor_cnpj": "98765432000110",
+    "itens": [
+      {
+        "barcode": "7891000000002",
+        "qtd_unidades": 50,
+        "preco_unit": 24.5
+      },
+      {
+        "barcode": "7891000000012",
+        "qtd_unidades": 40,
+        "preco_unit": 32
+      },
+      {
+        "barcode": "7891000000022",
+        "qtd_unidades": 70,
+        "preco_unit": 10.5
+      }
+    ]
+  },
+  {
+    "nf_numero": "100003",
+    "nf_chave": "35261045678912000134550010000010033000000003",
+    "tipo": "Entrada",
+    "fornecedor_cnpj": "45678912000134",
+    "itens": [
+      {
+        "barcode": "7891000000007",
+        "qtd_unidades": 10,
+        "preco_unit": 1890
+      },
+      {
+        "barcode": "7891000000008",
+        "qtd_unidades": 15,
+        "preco_unit": 1050
+      },
+      {
+        "barcode": "7891000000013",
+        "qtd_unidades": 50,
+        "preco_unit": 27
+      }
+    ]
+  },
+  {
+    "nf_numero": "200001",
+    "nf_chave": "35261024681357000186550010000020011000000004",
+    "tipo": "Saida",
+    "fornecedor_cnpj": "24681357000186",
+    "itens": [
+      {
+        "barcode": "7891000000004",
+        "qtd_unidades": 20,
+        "preco_unit": 9.5
+      },
+      {
+        "barcode": "7891000000006",
+        "qtd_unidades": 50,
+        "preco_unit": 2.5
+      },
+      {
+        "barcode": "7891000000019",
+        "qtd_unidades": 30,
+        "preco_unit": 3.99
+      }
+    ]
+  },
+  {
+    "nf_numero": "200002",
+    "nf_chave": "35261013579246000157550010000020022000000005",
+    "tipo": "Saida",
+    "fornecedor_cnpj": "13579246000157",
+    "itens": [
+      {
+        "barcode": "7891000000009",
+        "qtd_unidades": 8,
+        "preco_unit": 129.9
+      },
+      {
+        "barcode": "7891000000010",
+        "qtd_unidades": 5,
+        "preco_unit": 3299.9
+      },
+      {
+        "barcode": "7891000000015",
+        "qtd_unidades": 12,
+        "preco_unit": 189.9
+      }
+    ]
+  }
+]

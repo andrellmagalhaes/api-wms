@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Alimentação",
+    "status": true
+  },
+  {
+    "nome": "Bebidas",
+    "status": true
+  },
+  {
+    "nome": "Eletrônicos",
+    "status": true
+  },
+  {
+    "nome": "Informática",
+    "status": true
+  },
+  {
+    "nome": "Vestuário",
+    "status": true
+  },
+  {
+    "nome": "Higiene e Beleza",
+    "status": true
+  },
+  {
+    "nome": "Limpeza",
+    "status": true
+  },
+  {
+    "nome": "Escritório",
+    "status": true
+  },
+  {
+    "nome": "Ferramentas",
+    "status": true
+  },
+  {
+    "nome": "Construção",
+    "status": true
+  }
+]

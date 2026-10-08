@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Unidade",
+    "sigla": "UN",
+    "status": true
+  },
+  {
+    "nome": "Metro Quadrado",
+    "sigla": "M2",
+    "status": true
+  },
+  {
+    "nome": "Metro",
+    "sigla": "M",
+    "status": true
+  },
+  {
+    "nome": "Quilograma",
+    "sigla": "KG",
+    "status": true
+  },
+  {
+    "nome": "Litro",
+    "sigla": "L",
+    "status": true
+  },
+  {
+    "nome": "Caixa",
+    "sigla": "CX",
+    "status": false
+  },
+  {
+    "nome": "Pacote",
+    "sigla": "PCT",
+    "status": true
+  },
+  {
+    "nome": "Centimetro",
+    "sigla": "CM",
+    "status": true
+  },
+  {
+    "nome": "Metro Cubico",
+    "sigla": "M3",
+    "status": true
+  },
+  {
+    "nome": "Mililitro",
+    "sigla": "ML",
+    "status": false
+  }
+]

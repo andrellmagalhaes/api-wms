@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=65.5.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "api_wms"
+version = "1.0.0"
+description = "API REST em Python para gestão de armazéns (WMS) e rastreabilidade de estoques"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE.md"}
+authors = [{name="andrellmagalhaes", email="andreluizmagalhaes@hotmail.com"}]
+
+keywords = [
+    "python",
+    "api",
+    "rest",
+    "backend",
+    "fastapi",
+    "sqlalchemy",
+    "pydantic",
+    "wms",
+    "warehouse-management",
+    "estoque",
+    "logistica",
+    "inventory-management",
+    "supply-chain",
+    "rastreabilidade"
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: FastAPI",
+    "Typing :: Typed",
+    "Topic :: Office/Business",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+dependencies = [
+    "fastapi >= 0.141.1",
+    "pydantic >= 2.13.5",
+    "pydantic-settings >= 2.15.0",
+    "python-dotenv >= 1.2.3",
+    "sqlalchemy>=2.0.0",
+    "uvicorn >= 0.53.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx",
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "ruff"
+]
+postgres = ["psycopg2-binary"]
+mysql = ["pymysql"]
+seed = ["requests >= 2.34.2"]
+
+[project.urls]
+Homepage = "https://github.com/andrellmagalhaes/api-wms"
+Repository = "https://github.com/andrellmagalhaes/api-wms"
+"Bug Tracker" = "https://github.com/andrellmagalhaes/api-wms/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["api_wms*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/__init__.py"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
